@@ -13,9 +13,9 @@ export default function ToursGrid({ tours }: ToursGridProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
 
   // Extract unique categories
-  const categories = [
+  const categories: string[] = [
     "All",
-    ...Array.from(new Set(tours.map((t) => t.category).filter(Boolean))),
+    ...Array.from(new Set(tours.map((t) => t.category).filter((c): c is string => Boolean(c)))),
   ];
 
   // Filter tours based on selected category
