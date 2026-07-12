@@ -1,0 +1,4 @@
+-- Update Rwanda description with more detailed content
+UPDATE destinations 
+SET description = 'Rwanda, known as the "Land of a Thousand Hills," is a remarkable East African destination that has transformed into one of the continent''s premier safari locations. This small but stunning country offers an intimate wildlife experience, most notably the rare opportunity to trek through misty volcanic mountains to encounter endangered mountain gorillas in their natural habitat. Beyond gorillas, Rwanda boasts diverse ecosystems including the ancient Nyungwe Forest with its chimpanzees and canopy walks, the savannah plains of Akagera National Park home to the Big Five, and the serene shores of Lake Kivu. With its clean cities, welcoming people, and commitment to conservation, Rwanda provides a safe, accessible, and deeply moving safari experience that combines wildlife encounters with cultural immersion and breathtaking landscapes.'
+WHERE slug = 'rwanda';
